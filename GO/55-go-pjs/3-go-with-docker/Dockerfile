@@ -1,5 +1,6 @@
 
 	# Original code from video
+	
 FROM golang:1.12.0-alpine3.9
 # make a directory in the image
 RUN mkdir /app
@@ -11,6 +12,13 @@ RUN go build -o main .
 # go into directory and run the executable
 CMD ["/app/main"]
 
+
+
+
+
+
+
+# The below is troubleshooting that was misguided. The problem was putting a dot that you can see in line 33 after CMD.
 
 # you will need a few more commands to initialise mod files etc
 # tried to incorporate this https://docs.docker.com/language/golang/build-images/
