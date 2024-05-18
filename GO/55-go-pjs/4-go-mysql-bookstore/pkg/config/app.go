@@ -10,7 +10,7 @@ var (
 )
 
 func Connect() {
-	d, err := gorm.Open("mysql", "nedg:mypassword/tablename?charset=utf8&parseTime=True&loc=Local")
+	d, err := gorm.Open("mysql", "nedgroom:chocolate@tcp/neddb?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		panic(err)
 	}
